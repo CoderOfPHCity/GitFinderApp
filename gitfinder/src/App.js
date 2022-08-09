@@ -4,10 +4,13 @@ import Navbar from './Components/Layouts/Navbar';
 import About from './Components/About';
 import Home from './Components/Pages/Home'
 import Notfound from './Components/Pages/Notfound'
+import {Gitprovider} from './Components/Context/Usercontext'
 
 
 function App() {
-  return (    
+  return (   
+    
+  <Gitprovider>   
   <Router>
       < div className='flex flex-col justify-between h-screen'>
         <Navbar />
@@ -25,8 +28,9 @@ function App() {
         </main>
       </div>
   </Router>
- 
+ </Gitprovider>
   );
+  
 }
 
 export default App;

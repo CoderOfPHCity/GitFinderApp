@@ -1,16 +1,12 @@
 import React from 'react'
-import {useEffect, useContext} from 'react'
+import {useContext} from 'react'
 import GitContext from '../Context/Usercontext'
 import UserItem from './UserItem'
 
 
 
 function UserResults() {
-  const {users, fetchUser, loading} = useContext(GitContext)
-
-    useEffect(() => {
-        fetchUser()
-    }, [])
+  const {users, loading} = useContext(GitContext)
 
    
 

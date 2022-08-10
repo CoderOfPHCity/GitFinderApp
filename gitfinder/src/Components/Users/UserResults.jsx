@@ -19,7 +19,7 @@ function UserResults() {
           </div>
         )
       } else {
-        return <h3>abeg show ya seff</h3>
+        return <h3>Loading...</h3>
       }
   
 }

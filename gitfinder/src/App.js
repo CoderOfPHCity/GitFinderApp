@@ -8,6 +8,7 @@ import Notfound from './Components/Pages/Notfound'
 import {Gitprovider} from './Components/Context/Usercontext'
 import {Alertsprovider} from './Components/Context/Alerts/Alerts'
 import Alertuser from './Components/Layouts/Alertsuser';
+import Footer from './Components/Layouts/Footer/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   <Router>
       < div className='flex flex-col justify-between h-screen'>
         <Navbar />
+        
       
         <main className='container mx-auto px-3 pb-12'>
 
@@ -31,6 +33,7 @@ function App() {
           
           </Routes>
         </main>
+        <Footer />
       </div>
   </Router>
   </Alertsprovider>  

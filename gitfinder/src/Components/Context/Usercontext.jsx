@@ -15,21 +15,10 @@ export const Gitprovider=({children}) => {
     const [ state, dispatch] = useReducer(Reducer, initialData);
 
 
-    
-    const clearUsers = () => dispatch({
-        type: 'CLEAR_LOADING'
-    })
-    const setLoading = () => dispatch({
-        type: 'SET_LOADING' 
-    })
-
-
   return (
         <GitContext.Provider value={{
             ...state,
             dispatch, 
-            setLoading,
-            clearUsers
         }}>
             {children} 
         </GitContext.Provider>
